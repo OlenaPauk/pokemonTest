@@ -39,7 +39,7 @@ $(function () {
     }
 
     function getPokemonDetails(id, handler) {
-        $.get(`http://pokeapi.co/api/v2/pokemon/${id}`, handler)
+        $.get(`https://pokeapi.co/api/v2/pokemon/${id}`, handler)
     }
 
     $("#more").click(more);
