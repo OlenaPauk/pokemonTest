@@ -18,7 +18,7 @@
 }
 
 .pokemonPoster {
-    min-width: 150px;
+    min-width: 180px;
     height: 300px;
     border: 2px solid black;
     margin-bottom: 15px;
@@ -27,9 +27,7 @@
 .image {
     width: 80%;
     height: 60%;
-    border: 1px solid black;
     margin: 15px 10%;
-    border-radius: 5px;
 }
 
 img {
@@ -37,17 +35,149 @@ img {
     height: 200px;
 }
 
-#pokemonName {
+.pokemonName{
     text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.pokemonName::first-letter{
+    text-transform: uppercase;
 }
 .type{
     width: 45%;
     height: 25px;
     border-radius: 5px;
+    text-transform: capitalize;
+    margin-left: 5px;
+
 }
-.poisonType{
-    background-color: violet;
+.pokemonButton{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.normalType{
+    background-color: #A8A878;
+}
+.fireType{
+    background-color: #F08030;
+}
+
+.fightingType{
+    background-color: #C03028;
+}
+.waterType{
+    background-color: #6890F0;
+}
+
+.flyingType{
+    background-color: #A890F0;
 }
 .grassType{
-    background-color: green;
+    background-color: #78C850;
+}
+
+.poisonType{
+    background-color: #A040A0;
+}
+.electricType{
+    background-color: #F8D030;
+}
+
+.groundType{
+    background-color: #E0C068;
+}
+.psychicType{
+    background-color: #F85888;
+}
+
+.rockType{
+    background-color: #B8A038;
+}
+.iceType{
+    background-color: #98D8D8;
+}
+
+.bugType{
+    background-color: #A8B820;
+}
+.dragonType{
+    background-color: #7038F8;
+}
+
+.ghostType{
+    background-color: #705898;
+}
+.darkType{
+    background-color: #705848;
+}
+
+.steelType{
+    background-color: #B8B8D0;
+}
+.fairyType{
+    background-color: #EE99AC;
+}
+
+.unknownType{
+    background-color: #68A090;
+}
+
+.detailsContainer{
+    width: 250px;
+    height: 500px;
+    border: 1px solid black;
+    position: fixed;
+    top: 15%;
+    left: 55%;
+    display: none;
+}
+table,td{
+border: 1px solid black;
+
+}
+table{
+    width: 80%;
+    margin-left: 9%;
+    text-transform: capitalize;
+    border-spacing: 0;
+    text-align: center;
+}
+
+#more{
+    width: 45%;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 50px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+}
+input{
+    cursor: pointer;
+}
+.selectPokemon{
+    margin-left: 58px;
+    margin-bottom: 10px;
+}
+select{
+    width: 14.5%;
+    text-transform: capitalize;
+}
+.imageDetails{
+    width: 100%;   
+}
+.detailsSkillsPoke{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detailsName{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 22px;
+    margin-top: -10px;
 }
